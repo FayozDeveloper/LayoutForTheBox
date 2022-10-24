@@ -1,26 +1,72 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+        <Navbar/>
+        <div class='Hero'>
+          <MainPage/>
+        </div>
+        <Reasons/>
+        <About/>
+        <Services/>
+        <Stats_/>
+        <Ads_/>
+    <ProjectsPage/>
+    <Fom_/>
+    <Bottom_section/>
+    <Footer_section/>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Navbar from "@/components/Navbar";
+import MainPage from "@/components/MainPage";
+import Reasons from "@/components/Reasons";
+import About from "@/components/About";
+import Services from "@/components/Services";
+import Stats_ from "@/components/Stats";
+import Ads_ from "@/components/Ads";
+import ProjectsPage from "@/components/ProjectsPage";
+import Fom_ from "@/components/Fom";
+import Footer_section from "@/components/Footer";
+import Bottom_section from "@/components/Bottom";
+
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Bottom_section,
+    Footer_section,
+    Fom_,
+    ProjectsPage,
+    Ads_,
+    Stats_,
+    Services,
+    About,
+    Reasons,
+    MainPage,
+    Navbar,
   }
 }
+
 </script>
 
 <style>
-#app {
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.Hero{
+  width: 100%;
+  height: 646px;
+  background-image: url("./assets/Heroimg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#app{
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
+
 </style>

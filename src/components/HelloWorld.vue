@@ -2,40 +2,65 @@
   <div class="hello">
     <h1>{{ msg }}</h1>
     <p>
-      For a guide and recipes on how to configure / customize this project,<br>
-      check out the
+      {{ title }}
       <a href="https://cli.vuejs.org" target="_blank" rel="noopener">vue-cli documentation</a>.
     </p>
-    <h3>Installed CLI Plugins</h3>
-    <ul>
-      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-babel" target="_blank" rel="noopener">babel</a></li>
-      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-eslint" target="_blank" rel="noopener">eslint</a></li>
+    <ul v-for="todo in todosArray" :key="todo.id">
+      <li>{{ todo.title }}</li>
     </ul>
-    <h3>Essential Links</h3>
-    <ul>
-      <li><a href="https://vuejs.org" target="_blank" rel="noopener">Core Docs</a></li>
-      <li><a href="https://forum.vuejs.org" target="_blank" rel="noopener">Forum</a></li>
-      <li><a href="https://chat.vuejs.org" target="_blank" rel="noopener">Community Chat</a></li>
-      <li><a href="https://twitter.com/vuejs" target="_blank" rel="noopener">Twitter</a></li>
-      <li><a href="https://news.vuejs.org" target="_blank" rel="noopener">News</a></li>
-    </ul>
-    <h3>Ecosystem</h3>
-    <ul>
-      <li><a href="https://router.vuejs.org" target="_blank" rel="noopener">vue-router</a></li>
-      <li><a href="https://vuex.vuejs.org" target="_blank" rel="noopener">vuex</a></li>
-      <li><a href="https://github.com/vuejs/vue-devtools#vue-devtools" target="_blank" rel="noopener">vue-devtools</a></li>
-      <li><a href="https://vue-loader.vuejs.org" target="_blank" rel="noopener">vue-loader</a></li>
-      <li><a href="https://github.com/vuejs/awesome-vue" target="_blank" rel="noopener">awesome-vue</a></li>
-    </ul>
+    <h1>EcoTest</h1>
+    <h1>Function in Function</h1>
+    <test-component/>
   </div>
 </template>
 
 <script>
+import TestComponent from "@/components/TestComponent";
+
 export default {
   name: 'HelloWorld',
+  components:{
+    TestComponent,
+  },
   props: {
     msg: String
-  }
+  },
+  data() {
+    return {
+      title: 'Something Test',
+      search: "",
+      todosArray: []
+    }
+  },
+  methods: {
+    fetchFunctionTest() {
+      fetch("https://jsonplaceholder.typicode.com/todos")
+          .then(response => response.json())
+          .then(json => {
+            this.todosArray = json;
+            console.log(json)
+          });
+      // // axios.get('https://jsonplaceholder.typicode.com/todos')
+      // // .then(res => (this.todosArray = res.data))
+      // // .catch(error => console.log(error))
+      //
+      // this.axios.get('https://jsonplaceholder.typicode.com/todos').then((response) => {
+      //   console.log(response.data)
+      // })
+
+
+    }
+  },
+  mounted() {
+   this.fetchFunctionTest()
+
+    // axios.get('www.thecocktaildb.com/api/json/v1/1/filter.php?c=Cocktail')
+    // .then(res => (this.todosArray = res.data))
+    // .catch(error => console.log(error))
+  },
+  // created() {
+  //   this.fetchFunctionTest()
+  // }
 }
 </script>
 
