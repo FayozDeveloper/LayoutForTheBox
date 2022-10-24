@@ -115,6 +115,7 @@ export default {
     .left_Side{
       width: 100%;
       height: 80%;
+      padding: 20px;
     }
     .right_Side{
       width: 100%;
@@ -133,6 +134,7 @@ export default {
     }
     .left_Side{
       width: 100%;
+      padding: 20px;
     }
     .right_Side{
       width: 100%;

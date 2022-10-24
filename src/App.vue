@@ -1,7 +1,6 @@
 <template>
   <div>
         <TestNavbar/>
-<!--        <Navbar/>-->
         <div class='Hero'>
           <MainPage/>
         </div>
@@ -46,7 +45,6 @@ export default {
     About,
     Reasons,
     MainPage,
-    // Navbar,
   }
 }
 

@@ -13,7 +13,7 @@
           <input type="text" placeholder="Phone">
       </div>
       <div class="input">
-        <textarea placeholder="Message"/>
+        <textarea placeholder="Message" class="textA"/>
       </div>
       <button class="form_btn">
         Submit
@@ -85,22 +85,38 @@ export default {
     border: none
   }
 
-  @media screen and (max-width: 468px) {
+  /*@media screen and (max-width: 468px) {*/
+  /*  .container{*/
+  /*    width: 100%;*/
+  /*  }*/
+  /*  p{*/
+  /*    font-size: 25px;*/
+  /*  }*/
+  /*}*/
+  @media screen and (max-width: 768px) {
     .container{
       width: 100%;
     }
-    p{
-      font-size: 25px;
-    }
-  }
-  @media screen and (min-width: 768px) {
-    .container{
+    .input{
       width: 100%;
+      display: inline-block;
     }
-  }
-  @media screen and (min-width: 992px) {
-    .container{
-      width: 100%;
+
+    input{
+      width: 70%;
+      margin-top: 1.5pc;
     }
+    form{
+      display: inline-block;
+    }
+    .form_btn{
+      width: 60%;
+      border-radius: 15px;
+    }
+
+    .textA:focus{
+      outline: none;
+    }
+
   }
 </style>

@@ -114,7 +114,7 @@ export default {
     text-align: center;
   }
 
-  @media screen and (max-width: 468px){
+  @media screen and (max-width: 768px){
     .container{
       width: 100%;
       display: inline-block;
@@ -132,18 +132,6 @@ export default {
     }
     .social{
       margin-top: 2pc;
-    }
-  }
-  @media screen and (min-width: 768px){
-    .container{
-      width: 100%;
-      display: flex;
-    }
-  }
-  @media screen and (min-width: 992px){
-    .container{
-      width: 100%;
-      display: flex;
     }
   }
 

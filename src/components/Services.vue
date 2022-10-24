@@ -94,7 +94,7 @@ export default {
         grid-auto-rows: 100px;
       }
     }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 991px) {
       .container{
         width: 100%;
         padding-top: 2pc;
@@ -112,9 +112,6 @@ export default {
         grid-template-columns: repeat(2, 1fr);
         grid-auto-rows: 200px;
       }
-    }
-    @media screen and (max-width: 992px) {
-
     }
 
 

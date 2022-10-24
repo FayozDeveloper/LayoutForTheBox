@@ -186,16 +186,26 @@ export default {
       font-weight: 600;
     }
 
-    @media screen and  (max-width: 468px) {
+    @media screen and  (max-width: 991px) {
       .container{
         width: 100%;
         display: inline-block;
+        margin-top: 2pc;
       }
       .stats_section{
-        display: none
+        display: inline-block;
       }
       .left_side{
         width: 100%;
+        display: flex;
+      }
+      .stats_section{
+        width: 50%;
+        /*border:1px solid red;*/
+        justify-content: center;
+        justify-items: center;
+        display: inline-block;
+        margin-left: 1pc;
       }
       .icon_stats{
         display: none;
@@ -216,24 +226,38 @@ export default {
         margin-left: 10px;
         margin-top: 3pc;
       }
+      .count{
+        font-size: 40px;
+      }
 
       .stats{
-        width: 40%;
-
+        width: 90%;
+        height: 140px;
+        position: static;
+        margin: 0;
+        margin-bottom: 1pc;
       }
       .stats2{
-        width: 40%;
-
+        width: 90%;
+        height: 140px;
+        position: static;
+        margin: 0;
       }
       .stats3{
-        width: 40%;
-
+        width: 90%;
+        height: 140px;
+        position: static;
+        margin: 0;
+        margin-bottom: 1pc;
       }
       .stats4{
-        width: 40%;
-
+        width: 90%;
+        height: 140px;
+        position: static;
+        margin: 0;
       }
     }
+
 
 
 </style>

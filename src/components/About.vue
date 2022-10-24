@@ -87,7 +87,7 @@ export default {
     transition: 150ms ease;
   }
 
-  @media screen and (max-width: 468px){
+  @media screen and (max-width: 768px){
     .container{
       width: 100%;
       position: relative;
@@ -137,7 +137,7 @@ export default {
 
 
   }
-  @media screen and (max-width: 768px){
+  @media screen and (max-width: 991px){
     .container{
       width: 100%;
       position: relative;
