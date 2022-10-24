@@ -1,6 +1,6 @@
 <template>
-  <div class="container d-flex">
-      <div class="left_side col-7">
+  <div class="container">
+      <div class="left_side">
         <div class="stats_section">
             <div class="stats">
               <div class="info_stats">
@@ -42,7 +42,7 @@
             </div>
         </div>
       </div>
-      <div class="right_side col-5">
+      <div class="right_side">
           <div class="card_info">
             <div class="title">
               30 Years Experience
@@ -66,20 +66,18 @@ export default {
 
 <style scoped>
     .container{
+      display: flex;
       margin-top: 3vw;
       margin-bottom: 10vw;
-      border:1px solid green;
       position: relative;
     }
     .left_side{
       width: 60%;
       position: relative;
       margin-top: 3vw;
-      border: 1px solid red;
     }
     .right_side{
       width: 40%;
-      border:1px solid black;
       margin-top: 3vw;
     }
     .title{
@@ -99,6 +97,10 @@ export default {
       cursor: pointer;
       text-align: center;
       background-color: #3559C7;
+      margin-left: 10px;
+    }
+    .title{
+      margin-left: 10px;
     }
     .stats_section{
       display: flex;
@@ -189,14 +191,47 @@ export default {
         width: 100%;
         display: inline-block;
       }
+      .stats_section{
+        display: none
+      }
       .left_side{
         width: 100%;
-        position: relative;
       }
-
+      .icon_stats{
+        display: none;
+      }
       .right_side{
         width: 100%;
-        position: relative;
+      }
+      .card_info{
+        justify-content: center;
+        margin: 10px;
+      }
+      .title{
+        margin-left: 10px;
+        font-size: 50px;
+      }
+      .btn_info{
+        width: 40%;
+        margin-left: 10px;
+        margin-top: 3pc;
+      }
+
+      .stats{
+        width: 40%;
+
+      }
+      .stats2{
+        width: 40%;
+
+      }
+      .stats3{
+        width: 40%;
+
+      }
+      .stats4{
+        width: 40%;
+
       }
     }
 

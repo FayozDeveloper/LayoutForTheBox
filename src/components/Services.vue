@@ -101,6 +101,10 @@ export default {
       }
       .card{
         width: 100%;
+        justify-content: center;
+      }
+      .info{
+        font-size: 16px;
       }
       .grid{
         width: 100%;

@@ -61,11 +61,9 @@ export default {
   }
   .left_Side{
     width: 50%;
-    border:1px solid red
   }
   .right_Side{
     width: 50%;
-    border:1px solid blue;
     position: relative;
   }
   .info_carousel {
@@ -98,15 +96,14 @@ export default {
       .left_Side{
         width: 100%;
         height: 50%;
-        border:1px solid red;
+        padding: 20px;
       }
       .right_Side{
         width: 100%;
         height: 50%;
-        border: 1px solid blue;
       }
       .topic{
-        font-size: 56px;
+        font-size: 44px;
       }
   }
 
@@ -118,16 +115,14 @@ export default {
     .left_Side{
       width: 100%;
       height: 80%;
-      border:1px solid red;
     }
     .right_Side{
       width: 100%;
       height: 50%;
-      border: 1px solid blue;
       display: none;
     }
     .topic{
-      font-size: 56px;
+      font-size: 46px;
     }
   }
 
@@ -138,11 +133,9 @@ export default {
     }
     .left_Side{
       width: 100%;
-      border:1px solid red;
     }
     .right_Side{
       width: 100%;
-      border: 1px solid blue;
     }
     .topic{
       font-size: 56px;

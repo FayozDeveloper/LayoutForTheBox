@@ -1,6 +1,7 @@
 <template>
   <div>
-        <Navbar/>
+        <TestNavbar/>
+<!--        <Navbar/>-->
         <div class='Hero'>
           <MainPage/>
         </div>
@@ -17,7 +18,7 @@
 </template>
 
 <script>
-import Navbar from "@/components/Navbar";
+// import Navbar from "@/components/Navbar";
 import MainPage from "@/components/MainPage";
 import Reasons from "@/components/Reasons";
 import About from "@/components/About";
@@ -28,11 +29,13 @@ import ProjectsPage from "@/components/ProjectsPage";
 import Fom_ from "@/components/Fom";
 import Footer_section from "@/components/Footer";
 import Bottom_section from "@/components/Bottom";
+import TestNavbar from "@/components/TestNavbar";
 
 
 export default {
   name: 'App',
   components: {
+    TestNavbar,
     Bottom_section,
     Footer_section,
     Fom_,
@@ -43,7 +46,7 @@ export default {
     About,
     Reasons,
     MainPage,
-    Navbar,
+    // Navbar,
   }
 }
 
